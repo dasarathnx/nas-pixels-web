@@ -9,13 +9,13 @@ import { products } from "@/data/Products";
 
 const categories = [
   "Digital Signage Solutions",
-  "Static Signage & Wayfinding",
   "Audio-Visual System Integration",
   "Content Creation & Management",
   "Maintenance & Support",
   "Lighting Solutions",
   "Home Cinema & Smart Home Automation",
   "Consultation & Project Management",
+  "Static Signage & Wayfinding",
 ];
 
 /* ================= MAIN COMPONENT ================= */
@@ -130,10 +130,10 @@ function Grid({ items }) {
 function Card({ title, desc, thumbnail, slug }) {
   return (
     <Link
-    //  href={`/products/${slug}`} 
-    href={`/products`} 
-    
-    className="block w-full h-[450px] group">
+      href={`/products/${slug}`}
+      // href={`/products`}
+
+      className="block w-full h-[450px] group">
       <div className="relative group w-full h-[450px]">
 
         {/* Gradient Border */}
